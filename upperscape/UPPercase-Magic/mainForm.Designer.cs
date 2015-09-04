@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.btn_convert = new System.Windows.Forms.Button();
             this.ViewHistory = new System.Windows.Forms.ListView();
-            this.gBoxHistory = new System.Windows.Forms.GroupBox();
-            this.chkBoxHistory = new System.Windows.Forms.CheckBox();
             this.colTime = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colText = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.gBoxHistory = new System.Windows.Forms.GroupBox();
+            this.chkBoxHistory = new System.Windows.Forms.CheckBox();
             this.lblCopy = new System.Windows.Forms.Label();
             this.lblVersion = new System.Windows.Forms.Label();
             this.gBoxHistory.SuspendLayout();
@@ -67,6 +67,16 @@
             this.ViewHistory.View = System.Windows.Forms.View.Details;
             this.ViewHistory.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.ViewHistory_MouseDoubleClick);
             // 
+            // colTime
+            // 
+            this.colTime.Text = "Time";
+            this.colTime.Width = 49;
+            // 
+            // colText
+            // 
+            this.colText.Text = "Text";
+            this.colText.Width = 551;
+            // 
             // gBoxHistory
             // 
             this.gBoxHistory.Controls.Add(this.ViewHistory);
@@ -87,16 +97,6 @@
             this.chkBoxHistory.Text = "Show History";
             this.chkBoxHistory.UseVisualStyleBackColor = true;
             this.chkBoxHistory.CheckStateChanged += new System.EventHandler(this.chkBoxHistory_CheckStateChanged);
-            // 
-            // colTime
-            // 
-            this.colTime.Text = "Time";
-            this.colTime.Width = 49;
-            // 
-            // colText
-            // 
-            this.colText.Text = "Text";
-            this.colText.Width = 551;
             // 
             // lblCopy
             // 
